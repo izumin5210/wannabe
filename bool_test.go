@@ -208,6 +208,13 @@ func TestBool(t *testing.T) {
 				{in: 0 * time.Second, out: false},
 			},
 		},
+		{
+			test: "Booler",
+			cases: []Case{
+				{in: &fakeBooler{BoolFunc: func() bool { return false }}, out: false},
+				{in: &fakeBooler{BoolFunc: func() bool { return true }}, out: true},
+			},
+		},
 	}
 
 	for _, tg := range groups {
@@ -220,3 +227,7 @@ func TestBool(t *testing.T) {
 		})
 	}
 }
+
+type fakeBooler struct{ BoolFunc func() bool }
+
+func (b *fakeBooler) Bool() bool { return b.BoolFunc() }

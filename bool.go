@@ -6,6 +6,11 @@ import (
 	"strings"
 )
 
+// Booler is an interface for coverting to boolean.
+type Booler interface {
+	Bool() bool
+}
+
 // BoolEnv makes an environment variaable be bool.
 func BoolEnv(key string) bool {
 	if v, ok := os.LookupEnv(key); ok {
@@ -53,6 +58,8 @@ func Bool(v interface{}) bool {
 		return false
 	case nil:
 		return false
+	case Booler:
+		return v.Bool()
 	default:
 		return !isZero(reflect.ValueOf(v))
 	}
