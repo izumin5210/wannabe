@@ -1,4 +1,5 @@
 # wannabe
+[![GoDoc](https://godoc.org/github.com/izumin5210/wannabe?status.svg)](https://godoc.org/github.com/izumin5210/wannabe)
 [![license](https://img.shields.io/github/license/izumin5210/wannabe.svg)](./LICENSE)
 [![Go project version](https://badge.fury.io/go/github.com%2Fizumin5210%2Fwannabe.svg)](https://badge.fury.io/go/github.com%2Fizumin5210%2Fwannabe)
 
