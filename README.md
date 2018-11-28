@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/github/license/izumin5210/wannabe.svg)](./LICENSE)
 [![Go project version](https://badge.fury.io/go/github.com%2Fizumin5210%2Fwannabe.svg)](https://badge.fury.io/go/github.com%2Fizumin5210%2Fwannabe)
 
-Make everything be boolean ([wannabe_bool](https://github.com/prodis/wannabe_bool) porting for golang)
+Make everything be boolean (inspired by [wannabe_bool](https://github.com/prodis/wannabe_bool))
 
 
 ## Usage
